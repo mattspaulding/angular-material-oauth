@@ -1,0 +1,58 @@
+﻿<!--<form class="form-login" role="form">
+    <h2 class="form-login-heading">Sign up</h2>
+    <input type="text" class="form-control" placeholder="Username" data-ng-model="registration.userName" required autofocus>
+    <input type="password" class="form-control" placeholder="Password" data-ng-model="registration.password" required>
+    <input type="password" class="form-control" placeholder="Confirm Password" data-ng-model="registration.confirmPassword" required>
+    <button class="btn btn-lg btn-info btn-block" type="submit" data-ng-click="signUp()">Submit</button>
+    <div data-ng-hide="message == ''" data-ng-class="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
+        {{message}}
+    </div>
+</form>
+
+<div layout="row">
+    <div flex-gt-sm="33" offset-gt-sm="33">
+        <md-toolbar class="md-primary">
+            <h1 class="md-toolbar-tools">
+                Sign Up
+            </h1>
+        </md-toolbar>
+    </div>
+</div>-->
+<div layout="row">
+    <div flex-gt-sm="50" offset-gt-sm="25">
+        <md-content layout-padding>
+            <form name="userForm">
+                <h2 class="form-login-heading">Sign up</h2>
+                <md-input-container flex>
+                    <label>Username</label>
+                    <input required name="userName" ng-maxlength="20" ng-model="registration.userName">
+                    <div ng-messages="userForm.userName.$error">
+                        <div ng-message="required">required</div>
+                        <div ng-message="maxlength">too long</div>
+                    </div>
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Password</label>
+                    <input required name="password" type="password" ng-model="registration.password">
+                    <div ng-messages="userForm.password.$error">
+                        <div ng-message="required">required</div>
+                        <div ng-message="minlength">min</div>
+                    </div>
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Confirm Password</label>
+                    <input required name="confirmPassword" type="password" ng-model="registration.confirmPassword">
+                    <div ng-messages="userForm.confirmPassword.$error">
+                        <div ng-message="required">required</div>
+                    </div>
+                </md-input-container>
+                <div layout="row" layout-align="end">
+                    <md-button class="md-raised" type="submit" data-ng-click="signUp()">Submit</md-button>
+                </div>
+                <div data-ng-hide="message == ''" data-ng-class="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
+                    {{message}}
+                </div>
+            </form>
+        </md-content>
+    </div>
+</div>
