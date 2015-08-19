@@ -6,6 +6,11 @@ app.controller('indexController', ['$scope', '$location', 'authService', '$mdSid
         $location.path('/home');
     }
 
+    $scope.go = function (path) {
+        $location.path(path);
+    }
+
+
     $scope.authentication = authService.authentication;
 
 
