@@ -1,30 +1,43 @@
-﻿<form role="form">
-    <div class="row">
-        <div class="col-md-2">
-            &nbsp;
-        </div>
-        <div class="col-md-4">
-            <h2 class="form-login-heading">Login</h2>
-            <input type="text" class="form-control" placeholder="Username" data-ng-model="loginData.userName" required autofocus>
-            <input type="password" class="form-control" placeholder="Password" data-ng-model="loginData.password" required>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" data-ng-model="loginData.useRefreshTokens"><strong> Use Refresh Tokens</strong>
-                </label>
-            </div>
-            <button class="btn btn-md btn-info btn-block" type="submit" data-ng-click="login()">Login</button>
-              <div data-ng-hide="message == ''" class="alert alert-danger">
-                {{message}}
-            </div>
-        </div>
-        <div class="col-md-4">
-            <h2 class="form-login-heading">Social Logins</h2>
-            <p>Or you can login using one of the social logins bleow</p>
-            <button class="btn btn-large btn-facebook btn-block" type="button" data-ng-click="authExternalProvider('Facebook')"><i class="fa fa-facebook"></i> | Connect with Facebook</button>
-            <button class="btn btn-large btn-google-plus btn-block" type="button" data-ng-click="authExternalProvider('Google')"><i class="fa fa-google-plus"></i> | Connect with Google+</button>
-        </div>
-        <div class="col-md-2">
-            &nbsp;
-        </div>
+﻿<div layout="row">
+    <div flex flex-gt-sm="50" offset-gt-sm="25">
+        <md-content layout-padding>
+            <form name="userForm">
+                <h2 class="form-login-heading">Login</h2>
+                <md-input-container flex>
+                    <label>Username</label>
+                    <input required name="userName" ng-maxlength="20" ng-model="loginData.userName">
+                    <div ng-messages="userForm.userName.$error">
+                        <div ng-message="required">required</div>
+                        <div ng-message="maxlength">too long</div>
+                    </div>
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Password</label>
+                    <input required name="password" type="password" ng-model="loginData.password">
+                    <div ng-messages="userForm.password.$error">
+                        <div ng-message="required">required</div>
+                    </div>
+                </md-input-container>
+                <div layout="row" layout-align="end">
+                    <md-button style="color:lightgray;" ng-click="go('/signup')">Sign up</md-button>
+                    <md-button type="submit" ng-click="login()">Login</md-button>
+                </div>
+
+                <div data-ng-hide="message == ''" data-ng-class="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
+                    {{message}}
+                </div>
+                <md-divider md-inset></md-divider>
+                <div flex>
+                    <h2 class="form-login-heading">Social Logins</h2>
+                    <p>Or you can login using one of the social logins</p>
+                    <md-button flex="100" style="font-size:18px;" ng-click="authExternalProvider('Facebook')">
+                        <ng-md-icon icon="facebook" size="44"></ng-md-icon><span> Connect with Facebook</span>
+                    </md-button>
+                    <md-button flex="100" style="font-size:18px;" ng-click="authExternalProvider('Google')">
+                        <ng-md-icon icon="google-plus" size="44"></ng-md-icon><span> Connect with Google+</span>
+                    </md-button>
+                </div>
+            </form>
+        </md-content>
     </div>
-</form>
+</div>

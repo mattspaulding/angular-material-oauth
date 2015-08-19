@@ -26,7 +26,7 @@
 
         <md-toolbar layout="row" class="md-whiteframe-z1">
             <div class="md-toolbar-tools">
-                <md-button class="menu" hide-gt-sm ng-click="ul.toggleList()" aria-label="Show User List">
+                <md-button class="md-icon-button" hide-gt-sm aria-label="Show Menu">
                     <ng-md-icon icon="{{menuIcon}}" size="48" style="fill:white;" ng-click="menuToggle()" hide-gt-md></ng-md-icon>
                 </md-button>
                 <h2>Menu</h2>
@@ -38,9 +38,9 @@
                 This sidenav is locked open on your device. To go back to the default behavior,
                 narrow your display.
             </p>
-            <md-button ng-click="close()" class="md-primary" hide-gt-md>
+            <!--<md-button ng-click="close()" class="md-primary" hide-gt-md>
                 Close Sidenav Left
-            </md-button>
+            </md-button>-->
         </md-content>
 
     </md-sidenav>
@@ -81,7 +81,7 @@
             </div>
         </md-toolbar>
 
-        <md-content flex id="content">
+        <md-content flex layout-padding id="content">
             <div flex data-ng-view="">
             </div>
         </md-content>
