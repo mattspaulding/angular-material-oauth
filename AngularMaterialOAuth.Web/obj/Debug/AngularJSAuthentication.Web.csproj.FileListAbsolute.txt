@@ -1,0 +1,5 @@
+\\psf\Home\Downloads\AngularJSAuthentication-master 2\AngularJSAuthentication.Web\bin\AngularJSAuthentication.Web.dll.config
+\\psf\Home\Downloads\AngularJSAuthentication-master 2\AngularJSAuthentication.Web\bin\AngularJSAuthentication.Web.dll
+\\psf\Home\Downloads\AngularJSAuthentication-master 2\AngularJSAuthentication.Web\bin\AngularJSAuthentication.Web.pdb
+\\psf\Home\Downloads\AngularJSAuthentication-master 2\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.dll
+\\psf\Home\Downloads\AngularJSAuthentication-master 2\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.pdb

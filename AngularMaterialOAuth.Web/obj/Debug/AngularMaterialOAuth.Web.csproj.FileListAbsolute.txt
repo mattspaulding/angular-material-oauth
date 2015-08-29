@@ -1,0 +1,12 @@
+\\psf\Home\Downloads\AngularJSAuthentication-master 2\AngularJSAuthentication.Web\bin\AngularJSAuthentication.Web.dll.config
+\\psf\Home\Downloads\AngularJSAuthentication-master 2\AngularJSAuthentication.Web\bin\AngularJSAuthentication.Web.dll
+\\psf\Home\Downloads\AngularJSAuthentication-master 2\AngularJSAuthentication.Web\bin\AngularJSAuthentication.Web.pdb
+\\psf\Home\Downloads\AngularJSAuthentication-master 2\AngularJSAuthentication.Web\obj\Debug\AngularMaterialOAuth.Web.csprojResolveAssemblyReference.cache
+\\psf\Home\Downloads\AngularJSAuthentication-master 2\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.dll
+\\psf\Home\Downloads\AngularJSAuthentication-master 2\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.pdb
+C:\Users\mattspaulding\Documents\repo\angular-material-oauth\AngularMaterialOAuth.Web\bin\AngularJSAuthentication.Web.dll.config
+C:\Users\mattspaulding\Documents\repo\angular-material-oauth\AngularMaterialOAuth.Web\bin\AngularJSAuthentication.Web.dll
+C:\Users\mattspaulding\Documents\repo\angular-material-oauth\AngularMaterialOAuth.Web\bin\AngularJSAuthentication.Web.pdb
+C:\Users\mattspaulding\Documents\repo\angular-material-oauth\AngularMaterialOAuth.Web\obj\Debug\AngularJSAuthentication.Web.dll
+C:\Users\mattspaulding\Documents\repo\angular-material-oauth\AngularMaterialOAuth.Web\obj\Debug\AngularJSAuthentication.Web.pdb
+C:\Users\mattspaulding\Documents\repo\angular-material-oauth\AngularMaterialOAuth.Web\obj\Debug\AngularMaterialOAuth.Web.csprojResolveAssemblyReference.cache
